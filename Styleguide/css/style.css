@@ -1,0 +1,227 @@
+*, * * {
+	font-family: "montserrat";
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	height: 100%;
+	margin: auto;
+	scroll-behavior: smooth;
+}
+
+header {
+	position: relative;
+	z-index: 1;
+}
+
+body{
+	max-width: 1100px;
+	height: 100%;
+}
+
+.full-width{
+	width: 100%;
+}
+
+.full-height{
+	height: 100%;
+}
+.overskrift{
+	font-size: 47px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: #504F4F;
+}
+.underoverskrift{
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: #504F4F;
+}
+.brød{
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	color: #504F4F;
+}
+nav{
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	box-shadow: 1px 1px 2px #aaa;
+	background-color: #E0BFB2;
+}
+
+ul{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 75px;
+	margin-right: 120px;
+	position: relative;
+	list-style-type: none;
+	margin-top: -60px;
+}
+
+li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	padding: 10px 20px;
+	color: #504F4F;
+	font-size: 18px;
+}
+
+.navlogo{
+	max-width: 15%;
+	max-height: 15%;
+	margin-top: 15px;
+	margin-left: 120px;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100%;
+	width: 100%;
+	z-index: -1;
+
+}
+
+article{
+	font-family: "montserrat";
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+aside{
+	width: 400px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+
+h2{
+	font-family: "montserrat";
+	font-size: 28px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	width: 300px;
+}
+
+hr{
+	height: 2px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+footer{
+	font-family: "montserrat";
+	text-align: center;
+	margin-top: 100px;
+	background-color: #eee;
+	border-radius: 5px;
+	padding: 10px 20px;
+	width: 600px;
+}
+
+.code{
+	display: flex;
+	width: 400px;
+	background-color: #eee;
+	height: 100px;
+	border-radius: 4px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	overflow: scroll;
+}
+
+/*Logo start*/
+.logo-img img{
+	display: block;
+	height: 100px;
+}
+
+.logo-img-text{
+	display: block;
+	height: 70px;
+	background-image: url(../img/logo-med-text.png);
+	background-repeat: no-repeat;
+}
+/*Logo slut*/
+
+/*Farver start*/
+.farve1{
+	height: 100px;
+	width: 400px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	background-color: #E0BFB2;
+}
+
+.farve2{
+  height: 100px;
+	width: 400px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	background: #504F4F;
+}
+
+.farve3{
+  height: 100px;
+  width: 400px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: solid #CDCDCD;
+  background: #fff;
+}
+
+/*Farver slut*/
+
+.icon{
+  font-size: 65px;
+  height: 65px;
+  width: 65px;
+  margin-bottom: 20px;
+}
+
+.fa-facebook{
+	font-size: 2rem;
+	color: black;
+}
+
+.fa-instagram{
+	font-size: 2rem;
+	color: black;
+	margin-top: 100px;
+}
+
+.fa-solid{
+	font-size: 2rem;
+	color: black;
+	margin-top: 100px;
+}
+/*Icon slut*/
+
+.flex{
+	display: flex;
+}
+
+.center{
+	align-items: center;
+	justify-content: center;
+}
+
+.hcenter{
+	justify-content: center;
+}
+
+.vcenter{
+	align-items: center;
+}
