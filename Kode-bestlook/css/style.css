@@ -1,0 +1,541 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: white;
+}
+
+h1{
+  font-size: 23px;
+  font-weight: 800;
+  color: #504F4F;
+}
+
+h2{
+  font-size: 18px;
+  font-weight: normal;
+  color: #504F4F;
+}
+
+p{
+  font-size: 17px;
+  font-weight: normal;
+  color: #504F4F;
+}
+
+/* Nav start*/
+.top-element{
+  background-color: #e0b2bc;
+  height: 45px;
+}
+
+.top-element p{
+  font-size: 14px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 15%;
+}
+
+.logo{
+  text-align: center;
+}
+
+.logo img{
+  max-width: 18%;
+  margin-top: 20px;
+}
+
+.icons-head{
+  color: #504F4F;
+  font-size: 23px;
+  float: right;
+  margin-right: 150px;
+  margin-top: -32px;
+  letter-spacing: 20px;
+  cursor: pointer;
+}
+
+nav ul{
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 0 5px;
+  margin-top: 20px;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 8px 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav>ul>li>ul {
+  position: absolute;
+  background-color: #e0b2bc;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  margin-top: -10px;
+}
+
+ul li a:hover{
+  border-bottom: 1px solid #000e05;
+}
+
+ul li ul li{
+  display: none;
+  background-color: #e0b2bc;
+  margin-top: 10px;
+}
+
+ul li ul li a{
+  color: white;
+}
+
+ul li:hover ul li{
+  display: inline-block;
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color:#504F4F;
+  margin: 5px;
+  transition: all 0.2s ease;
+}
+
+.burger-ikon{
+  display: none;
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform:translateX(50px);
+  }
+
+  to{
+    opacity: 1;
+    transform:translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform:rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform:rotate(45deg) translate(-5px,-6px);
+}
+/*End Nav*/
+
+/*Hero start*/
+#hero{
+  padding-top: 20px;
+  padding-left: 170px;
+}
+
+.hero-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  position: relative;
+  left: 0;
+}
+
+.hero-column{
+  flex: 50%;
+  max-width: 80%;
+  width: 100px;
+  padding: 10px;
+}
+
+.flower{
+  max-width: 100%;
+}
+
+.model{
+  max-width: 67%;
+}
+/*Hero start*/
+
+/*Hair start*/
+#hair{
+  padding: 30px 50px;
+  margin-top: 20px;
+}
+
+.overskrift{
+  margin-left: 40%;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: #504F4F;
+  font-size: 23px;
+  font-weight: bold;
+}
+/*Hair slut*/
+
+/*Arm start*/
+#arm{
+  padding: 30px 50px;
+  margin-top: 20px;
+}
+
+#arm h1{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+/*Arm slut*/
+
+/*Ringe start*/
+#ring{
+  padding: 30px 50px;
+  margin-top: 20px;
+}
+
+#ring h1{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+/*Ringe slut*/
+
+/*Ear start*/
+#ear{
+  padding: 30px 50px;
+  margin-top: 20px;
+}
+
+#ear h1{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+/*Ear slut*/
+
+/*Row og column start*/
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  position: relative;
+  left: 0;
+}
+
+.column{
+  flex: 25%;
+  max-width: 30%;
+  width: 100px;
+  padding: 20px;
+}
+
+.column img{
+  max-width: 100%;
+}
+
+.column h1{
+  text-align: center;
+}
+
+.column h2{
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+}
+
+.column p{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn{
+  margin-top: 20px;
+  text-align: center;
+  width: 130px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 2px;
+  border: 0.5px solid #504F4F;
+  background-color: white;
+  position: relative;
+  left: 25%;
+  cursor: pointer;
+}
+
+.btn:hover{
+  border-radius: 2px;
+  border: none;
+  background-color: #e0b2bc;
+  color: white;
+  transition: 0.2s;
+}
+
+.icon-column{
+  color: lightgrey;
+  font-size: 30px;
+  margin-top: -40px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.icon-column:hover{
+  color: #c6c6c6;
+  font-size: 30px;
+  transition: 0.2s;
+}
+/*Row og column slut*/
+
+
+/*footer start*/
+footer{
+  background-color: #e0b2bc;
+  padding: 50px 50px;
+}
+
+footer h1{
+  color: white;
+}
+
+footer p{
+  color: white;
+}
+
+.row-footer{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 50px;
+}
+
+.column-footer{
+  flex: 25%;
+  max-width: 30%;
+  width: 100px;
+  padding: 20px;
+}
+
+.info{
+  line-height: 50px;
+}
+
+.social{
+  line-height: 50px;
+}
+
+.ikon{
+  color: white;
+  font-size: 35px;
+  line-height: 50px;
+  position: relative;
+  left: 28%;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.kunde{
+  line-height: 50px;
+  float: right;
+  position: relative;
+  cursor: pointer;
+}
+
+.kunder p:hover{
+  border-bottom: 1px solid #504F4F;
+}
+
+/*Responsiv start*/
+@media all and (max-width: 1000px){
+  .logo img{
+    max-width: 25%;
+  }
+  .top-element p{
+    margin-left: 10%;
+  }
+
+  .nav-menu{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    top: 5vh;
+    background-color: #e0b2bc;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.1s ease-in;
+  }
+
+  .nav-menu a{
+    line-height: 100px;
+  }
+
+  .burger{
+    display: block;
+    margin-top: -35px;
+  }
+
+  .burger-ikon i{
+    display: block;
+    color: white;
+
+  }
+
+  nav ul li a{
+    color: white;
+  }
+
+  ul li:hover ul li{
+    display: inline-block;
+    background-color: white;
+  }
+
+  nav>ul>li>ul {
+    background-color: white;
+  }
+
+  ul li ul li a{
+    color: #504F4F;
+  }
+
+  .icons-head{
+    float: right;
+    margin-right: 60px;
+    font-size: 20px;
+  }
+
+  .social{
+    display: none;
+  }
+
+  .column{
+    flex: 50%;
+    max-width: 60%;
+    width: 100px;
+    padding: 20px;
+  }
+
+  .btn{
+    position: relative;
+    left: 35%;
+    cursor: pointer;
+  }
+
+  footer{
+    background-color: #e0b2bc;
+    padding: 0px 1px;
+  }
+
+  .kunde{
+    line-height: 50px;
+    float: right;
+    position: relative;
+    right: 100px;
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 728px){
+  .logo img{
+    max-width: 30%;
+  }
+
+  .top-element p{
+    margin-left: 5%;
+  }
+
+  .icons-head{
+    float: right;
+    margin-right: 10px;
+    font-size: 18px;
+    margin-top: -25px;
+  }
+
+  .social{
+    display: none;
+  }
+
+  footer{
+    background-color: #e0b2bc;
+    padding: 0px 1px;
+  }
+
+  .row-footer{
+    position: relative;
+    left: 0;
+  }
+
+  .column-footer{
+    flex: 50%;
+    max-width: 35%;
+
+  }
+}
+
+@media all and (max-width: 574px){
+  .top-element p{
+    margin-left: 4.5%;
+  }
+
+  .btn{
+    position: relative;
+    left: 15%;
+    cursor: pointer;
+  }
+
+  #hero{
+    padding-top: 20px;
+    padding-left: 75px;
+  }
+
+  .overskrift{
+    margin-left: 28%;
+  }
+
+  .icon-column{
+    margin-left: -6px;
+  }
+
+  .kunde{
+    line-height: 50px;
+    float: right;
+    position: relative;
+    right: 1px;
+    cursor: pointer;
+  }
+
+}
+/*Responsiv slut*/

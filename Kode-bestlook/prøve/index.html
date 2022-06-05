@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+
+    <!-- Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awsome  -->
+    <script src="https://kit.fontawesome.com/158f148d73.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-bg">
+            <div class="left-side"></div>
+            <div class="right-side"></div>
+        </div>
+        <header>
+          <div class="top-element">
+            <p>Gratis forsendelse over 295 DKK</p>
+            <p>Levering i hele landet</p>
+            <p>14 dages returet</p>
+          </div>
+
+
+            <div class="shopping-bag">
+                <a href="./cart.html">
+                    <img src="./icons/bag.png" alt="cart">
+                    Cart
+                    <div class="total-items-in-cart">
+                        0
+                    </div>
+                </a>
+            </div>
+        </header>
+
+    <div class="products-list">
+        <div class="products">
+            <!-- render porducts here -->
+        </div>
+        <div class="cart">
+            <div class="cart-header">
+                <div class="column1">Item</div>
+                <div class="column2">Unit price</div>
+                <div class="column3">Units</div>
+            </div>
+            <div class="cart-items">
+                <!-- render cart items here -->
+            </div>
+            <div class="cart-footer">
+                <div class="subtotal">
+                    Subtotal (0 items): 0 DKK
+                </div>
+                <div class="checkout">
+                    Proceed to checkout
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
