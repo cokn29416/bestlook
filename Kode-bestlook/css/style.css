@@ -164,27 +164,66 @@ ul li:hover ul li{
   padding-left: 170px;
 }
 
-.hero-row{
+/*Slideshow start*/
+.slider{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  position: relative;
-  left: 0;
+  margin-left: 70px;
 }
 
-.hero-column{
-  flex: 50%;
-  max-width: 80%;
-  width: 100px;
-  padding: 10px;
+.slides input{
+  display: none;
 }
 
-.flower{
-  max-width: 100%;
+.slide{
+  width: 20%;
+  transition: 2s;
 }
 
-.model{
-  max-width: 67%;
+.slide img{
+  width: 75%;
+  height: auto;
+}
+/*Manual slide navigation*/
+.navigation-manual{
+  position: absolute;
+  right: 0.5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.manual-btn{
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: -10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: black;;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
 }
 /*Hero start*/
 

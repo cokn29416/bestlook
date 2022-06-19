@@ -86,14 +86,28 @@
 
 <!-- Herostart -->
 <section id="hero">
-  <div class="hero">
-    <div class="hero-row">
-      <div class="hero-column">
-        <img src="img/clip1.JPG" class="flower" alt="Hårklemme1">
+  <div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img class="img1" src="img/udsalg.png" alt="">
       </div>
-      <div class="hero-column">
-          <img src="img/model.png" class="model" alt="Model">
+      <div class="slide">
+        <img class="img2" src="img/udsalg2.png" alt="">
       </div>
+      <!--Overlay slideshow start-->
+      <!--Overlay slideshow end-->
+      <!--slide images end-->
+    </div>
+
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn" onclick="count();"></label>
+      <label for="radio2" class="manual-btn" onclick="count();"></label>
     </div>
   </div>
 </section>
