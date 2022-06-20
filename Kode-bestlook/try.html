@@ -41,13 +41,14 @@
       </div>
     </div>
 
+
   <nav>
     <ul class="nav-menu">
-      <li><a href="#">Forside</a></li>
-      <li><a href="#">Håraccessories</a>
+      <li><a href="https://coek.dk/Kode-bestlook/try.html">Forside</a></li>
+      <li><a href="https://coek.dk/Kode-bestlook/hairacc.html">Håraccessories</a>
         <ul class="dropdown-content">
-          <li><a href="#">Hårbøjler</a></li>
-          <li><a href="#">Hårklemmer</a></li>
+          <li><a href="https://coek.dk/Kode-bestlook/hairb.html">Hårbøjler</a></li>
+          <li><a href="https://coek.dk/Kode-bestlook/hairclip.html">Hårklemmer</a></li>
           <li><a href="#">Scrunchies</a></li>
         </ul>
       </li>
@@ -90,6 +91,36 @@
   </nav>
 </header>
 
+<!-- Herostart -->
+<section id="hero">
+  <div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img class="img1" src="img/udsalg.png" alt="">
+      </div>
+      <div class="slide">
+        <img class="img2" src="img/udsalg2.png" alt="">
+      </div>
+      <!--Overlay slideshow start-->
+      <!--Overlay slideshow end-->
+      <!--slide images end-->
+    </div>
+
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn" onclick="count();"></label>
+      <label for="radio2" class="manual-btn" onclick="count();"></label>
+    </div>
+  </div>
+</section>
+<!-- Hero slut -->
+
+
 <div class="products-list">
     <div class="products">
         <!-- render porducts here -->
@@ -108,8 +139,11 @@
                 Subtotal (0 items): 0 DKK
             </div>
             <div class="checkout">
-                Proceed to checkout
+                Til kassen
             </div>
+        </div>
+        <div class="closeCart">
+          <i class="fa fa-times"></i>
         </div>
     </div>
     </div>

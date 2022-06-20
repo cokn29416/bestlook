@@ -26,6 +26,8 @@ const navSlide = () =>{
 navSlide();
 //Buger menu//
 
+
+
 //Slide//
 var counter = 1;
 setInterval(function(){

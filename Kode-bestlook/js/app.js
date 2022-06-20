@@ -1,4 +1,25 @@
 /* app.js */
+//Kurv burger
+const cartItems = document.querySelector('.cart');
+const closeCart = document.querySelector('.closeCart');
+const openCart = document.querySelector('.shopping-cart');
+
+openCart.addEventListener('click', show);
+closeCart.addEventListener('click', close);
+
+function show(){
+  cartItems.style.display = 'flex';
+  cartItems.style.top = '0';
+  closeCart.style.display ='block';
+  openCart.style.display = 'none';
+}
+
+function close(){
+  cartItems.style.top = '-200%';
+  openCart.style.display = 'block';
+}
+
+//Kurv burger slut//
 
 // SELECT ELEMENTS
 const productsEl = document.querySelector(".products");
@@ -17,7 +38,7 @@ function renderProducts() {
                     </div>
                     <div class="desc">
                         <h2>${product.name}</h2>
-                        <h2><small>$</small>${product.price}</h2>
+                        <h2>${product.price} <small>DKK</small></h2>
                         <p>
                             ${product.description}
                         </p>

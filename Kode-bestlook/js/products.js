@@ -2,7 +2,7 @@ const products = [
 {
     id:0,
     name:"NUI",
-    price: "125 DKK",
+    price: 125,
     instock: 10,
     description:
       "Hårklemme i hvid og grå nuancer.",
